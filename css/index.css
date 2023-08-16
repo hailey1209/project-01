@@ -117,8 +117,8 @@ main .main-scroll .scroll-container .item-container::-webkit-scrollbar{
     display: none;
 }
 main .main-scroll .scroll-container .item-container .item{
-    width: 150px;
-    min-width: 150px;
+    width: 200px;
+    min-width: 200px;
     height: 100%;
     margin: 0 0.5rem;
     box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
@@ -130,17 +130,20 @@ main .main-scroll .scroll-container .item-container .item.dark{
 }
 
 main .main-scroll .scroll-container .item-container .item .item-img{
-    width: 80%;
-    height: 50%;
+    width: 90%;
+    height: 60%;
     margin: 0.5rem auto;
     /* border: 1px solid red; */
-    background-color: #008080;
+    background-color: lightgray;
     overflow: hidden;
     border-radius: 0.2rem;
 }
 main .main-scroll .scroll-container .item-container .item .item-content{
     /* border: 1px solid red; */
-    margin: 1rem;
+    margin: 0.5rem;
+}
+main .main-scroll .scroll-container .item-container .item .item-content h3{
+    font-weight: bold;
 }
 main .main-scroll .scroll-container .item-container .item .item-content p{
     font-size: 0.5rem;

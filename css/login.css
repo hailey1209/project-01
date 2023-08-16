@@ -14,6 +14,7 @@ body.dark{
 }
 body{
     background-color: var(--main-bg-color);
+    overflow-x: hidden;
 }
 
 header .navbar .logo a{
@@ -104,6 +105,9 @@ main .login-form form fieldset .form .more a{
     font-size: 0.8rem;
     /* margin: 0 0.5rem; */
     color: #333;
+}
+main .login-form form fieldset .form .more a.dark{
+    color: white;
 }
 main .login-form form fieldset .form .more a:hover{
     text-decoration: underline;

@@ -12,7 +12,9 @@ window.onload = () => {
     const scrollItems = document.querySelectorAll('main .main-scroll .scroll-container .item-container .item')
     const resultItem = document.querySelectorAll('main .search-container .result-container .result-item')
     const resultItemDetail = document.querySelectorAll('main .search-container .result-container .result-item .item-detail p')
-
+    const registerInputs = document.querySelectorAll('main .register-form fieldset .forms ul li input')
+    const loginLinks = document.querySelectorAll('main .login-form form fieldset .form .more a')
+    
     mode.addEventListener('click', (e) => {
       document.body.classList.toggle('dark')
       header.classList.toggle('dark')
@@ -30,7 +32,12 @@ window.onload = () => {
       for(let detail of resultItemDetail){
         detail.classList.toggle('dark')
       }
-  
+      for(let input of registerInputs){
+        input.classList.toggle('dark')
+      }
+      for(let link of loginLinks){
+        link.classList.toggle('dark')
+      }
       for(let icon of icons){  //모드 버튼의 display설정 변경
         icon.classList.contains('show') ? 
         icon.classList.remove('show')

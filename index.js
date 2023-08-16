@@ -9,7 +9,7 @@ window.onload = () => {
   const hambtn = document.querySelector('header .navbar .ham-btn')
   const icons = document.querySelectorAll('header .navbar .mode .material-symbols-outlined')
   const scrollBtn = document.querySelectorAll('main .main-scroll .scroll-container .btns button')
-  const scrollItems = document.querySelectorAll('main .main-scroll .scroll-container .item-container .item')
+  // const scrollItems = document.querySelectorAll('.item')
 
   mode.addEventListener('click', (e) => {
     document.body.classList.toggle('dark')
@@ -43,53 +43,55 @@ window.onload = () => {
     : header.classList.remove('active')
   })
 
-  //마우스 가로 스크롤 이벤트
-  const scrollBox = document.querySelector('main .main-scroll .scroll-container .item-container')
-  scrollItems
-  const leftBtn = document.querySelector('.left')
-  const rightBtn = document.querySelector('.right')
-
-  function leftSlider(e){
-    for(let item of scrollItems){
-    item.style.transform = `translateX(-${item.offsetWidth*3}%)`
-    item.style.transition = '0.3s'
-    }
-  }
-  function rightSlider(e){
-    for(let item of scrollItems){
-    item.style.transform = `translateX(0%)`
-    }
-  }
-  leftBtn.addEventListener('click', leftSlider)
-  rightBtn.addEventListener('click', rightSlider)
-
 }
 
 
+function loadApi(url){
+  return fetch(url)
+.then(response=> response.json())
+.then(response=> response.boxOfficeResult.dailyBoxOfficeList)
+// .then(response=> console.log(response))
+}
 
-
-// const options = {
-//     method: 'GET',
-//     headers: {
-//       accept: 'application/json',
-//       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYzliMGU0ZWU3ODhiNWNmYmMyZmVmNTJhOWMyMjA3NSIsInN1YiI6IjY0ZDk4YmMzYTEwNzRiMDBjN2QyYTlmYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.b42PkLurZqrcmn39GPSuLXhaAYIZnD4pNk9wcAMSdw4'
-//     }
-//   };
-
-//   async function loadApi(url,options){
-//     await fetch(url,options)
-//     .then(response=>response.json())
-//     // .catch(err=> console.log(err))
-//   }
+function showwData(data){
+  const movieDetail = []
+  const movieItemContiner = document.querySelector('main .main-scroll .scroll-container .item-container')
+  for(let i=0; i<10; i++){
+    const title = data[i].movieNm
+    const rank = data[i].rank
+    const release = data[i].openDt
+    movieDetail.push({title, rank, release})
+    const item = document.createElement('div')
+    item.className = 'item'
+    item.innerHTML=`<div class="item-img">
+                    <img src="" alt="">
+                  </div>
+                  <div class="item-content">  
+                    <h3>${data[i].movieNm}</h3>
+                    <p>${data[i].openDt}</p>
+                  </div>`
+    movieItemContiner.appendChild(item)
+  }
+    //마우스 가로 스크롤 이벤트
+    const scrollItems = document.querySelectorAll('.item')
+    const leftBtn = document.querySelector('.left')
+    const rightBtn = document.querySelector('.right')
   
-//   function showdata(data){
-//     const datas = data
-//     const dataList = []
-//     for(let itemData of datas){
-//       console.log(data)
-//       const title = itemData.title
-//     }
-//   }
+    function leftSlider(e){
+      for(let item of scrollItems){
+      item.style.transform = `translateX(-${item.offsetWidth*3}%)`
+      item.style.transition = '0.3s'
+      }
+    }
+    function rightSlider(e){
+      for(let item of scrollItems){
+      item.style.transform = `translateX(0%)`
+      }
+    }
+    leftBtn.addEventListener('click', leftSlider)
+    rightBtn.addEventListener('click', rightSlider)
+  console.log(movieDetail)
 
-//   loadApi('https://api.themoviedb.org/3/trending/movie/week?language=en-US', options)
-//   .then(data=>showdata(data))
+}
+loadApi('http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=a686fcd94c3bc0a1ae44f56193240ed2&targetDt=20120101')
+.then(data=>showwData(data))
