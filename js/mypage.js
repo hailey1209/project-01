@@ -107,3 +107,22 @@ function returnTo(e){
     }
 }
 editBtn.addEventListener('click', toEdit)
+
+
+// 영화아이템 목록에서 지우기
+const itemContainer = document.querySelector('main .personal-detail .list-items ul')
+const movieItem = document.querySelectorAll('main .personal-detail .list-items ul li')
+const deletBtn = document.querySelectorAll('main .personal-detail .list-items ul li button')
+
+console.log(deletBtn)
+console.log(movieItem)
+
+for(let i=0; i<movieItem.length; i++){
+    deletBtn[i].addEventListener('click', function(e){
+        if(e.target == deletBtn[i]){
+            // movieItem[i].style.display = 'none'
+            itemContainer.removeChild(movieItem[i])
+            return console.log(itemContainer)
+        }
+    })
+}
