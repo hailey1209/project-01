@@ -93,6 +93,28 @@ main .personal-detail .details .edit-btn button{
      font-weight: bold;
      cursor: pointer;
 }
+main .personal-detail .list-items .add-btn{
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    position: relative;
+    right: -20rem;
+    width: 5rem;
+    height: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+main .personal-detail .list-items .add-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+main .personal-detail .list-items .add-btn a:visited{
+    text-decoration: none;
+    color: white;
+}
 main .personal-detail .list-items ul{
     display: flex;
 }

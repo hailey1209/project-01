@@ -113,6 +113,7 @@ editBtn.addEventListener('click', toEdit)
 const itemContainer = document.querySelector('main .personal-detail .list-items ul')
 const movieItem = document.querySelectorAll('main .personal-detail .list-items ul li')
 const deletBtn = document.querySelectorAll('main .personal-detail .list-items ul li button')
+const addBtn = document.querySelector('main .personal-detail .list-items .add-btn')
 
 console.log(deletBtn)
 console.log(movieItem)
