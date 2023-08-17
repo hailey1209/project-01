@@ -117,13 +117,17 @@ const addBtn = document.querySelector('main .personal-detail .list-items .add-bt
 
 console.log(deletBtn)
 console.log(movieItem)
-
-for(let i=0; i<movieItem.length; i++){
-    deletBtn[i].addEventListener('click', function(e){
-        if(e.target == deletBtn[i]){
-            // movieItem[i].style.display = 'none'
-            itemContainer.removeChild(movieItem[i])
-            return console.log(itemContainer)
-        }
-    })
+if(movieItem.length == 0){
+    const coment = document.createElement('p')
+    coment.innerText = '영화 리스트가 비어있습니다.'
+    itemContainer.appendChild(coment)
+}else{
+    for(let i=0; i<movieItem.length; i++){
+        deletBtn[i].addEventListener('click', function(e){
+            if(e.target == deletBtn[i]){
+                itemContainer.removeChild(movieItem[i])
+                return itemContainer
+            }
+        })
+    }
 }
