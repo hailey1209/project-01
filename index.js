@@ -9,7 +9,7 @@ window.onload = () => {
   const hambtn = document.querySelector('header .navbar .ham-btn')
   const icons = document.querySelectorAll('header .navbar .mode .material-symbols-outlined')
   const scrollBtn = document.querySelectorAll('main .main-scroll .scroll-container .btns button')
-  // const scrollItems = document.querySelectorAll('.item')
+  const scrollItems = document.querySelectorAll('.item')
 
   mode.addEventListener('click', (e) => {
     document.body.classList.toggle('dark')

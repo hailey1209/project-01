@@ -12,16 +12,26 @@ body.dark{
     color: white;
 }
 body{
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
+    background-image: url('https://img.freepik.com/free-photo/composition-cinema-elements-beige-background_23-2148416815.jpg?w=900&t=st=1692247590~exp=1692248190~hmac=8123d756f07751a0d927f949ccf63463bbbc00bf05d48985cdb1104793446615');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(0.3rem);
+    background-blend-mode: color-burn ;
     overflow-x: hidden;
 }
 
 /* 메인 상단 문구 */
+main{
+    /* border: 1px solid red; */
+    height: 90vh;
+}
 main .main-coment{
     /* border: 1px solid red; */
     height: 7rem;
     width: 90%;
-    margin: auto;
+    margin: 1.5rem auto;
     /* margin-top: 7rem; */
     text-align: center;
     padding: 1rem;
@@ -68,7 +78,7 @@ main .main-scroll .scroll-container .btns button{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     transition: 0.3s;
     cursor: pointer;
     text-align: center;
@@ -123,6 +133,7 @@ main .main-scroll .scroll-container .item-container .item{
     margin: 0 0.5rem;
     box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
     border-radius: 0.2rem;
+    background-color: rgba(148, 148, 148, 0.3);
     z-index: -1;
 }
 main .main-scroll .scroll-container .item-container .item.dark{
@@ -137,6 +148,12 @@ main .main-scroll .scroll-container .item-container .item .item-img{
     background-color: lightgray;
     overflow: hidden;
     border-radius: 0.2rem;
+}
+main .main-scroll .scroll-container .item-container .item .item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 main .main-scroll .scroll-container .item-container .item .item-content{
     /* border: 1px solid red; */

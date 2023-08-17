@@ -17,7 +17,7 @@ buttons[0].addEventListener('click', (e)=> {
         openBtn_01.style.display = 'none'
     }else{
         acodienBox_01.style.display = 'none'
-        detailBox_01.style = 'margin-bottom: 0.5rem; border-radius: 0.5rem'
+        detailBox_01.style = 'margin-bottom: 1rem; border-radius: 0.5rem'
         closeBtn[0].style.display = 'none'
         openBtn_01.style.display = 'block'
     }
@@ -30,7 +30,7 @@ buttons[2].addEventListener('click', (e)=> {
         openBtn_02.style.display = 'none'
     }else{
         acodienBox_02.style.display = 'none'
-        detailBox_02.style = 'margin-bottom: 0.5rem; border-radius: 0.5rem'
+        detailBox_02.style = 'margin-bottom: 1rem; border-radius: 0.5rem'
         closeBtn[1].style.display = 'none'
         openBtn_02.style.display = 'block'
     }

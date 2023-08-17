@@ -61,7 +61,7 @@ header .navbar .nav ul li{
     text-align: center;
     padding: 0.5rem;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 0.2rem;
     transition: 0.3s;
 }
@@ -136,4 +136,7 @@ header .navbar .ham-btn.dark:hover{
     display: block;
     color: white;
     background: #333;
+  }
+  .mode .material-symbols-outlined:hover{
+    text-shadow: 0 0 1rem lightgoldenrodyellow;
   }

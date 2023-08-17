@@ -13,7 +13,14 @@ body.dark{
     color: white;
 }
 body{
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
+    background-image: url('https://img.freepik.com/free-photo/composition-cinema-elements-beige-background_23-2148416815.jpg?w=900&t=st=1692247590~exp=1692248190~hmac=8123d756f07751a0d927f949ccf63463bbbc00bf05d48985cdb1104793446615');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(0.3rem);
+    background-blend-mode: color-burn ;
+    overflow-x: hidden;
 }
 
 header .navbar .logo a{
@@ -22,7 +29,7 @@ header .navbar .logo a{
 }
 footer{
     position: fixed;
-    display: none;
+    /* display: none; */
 }
 
 /* 개인정보 리스트 */
@@ -31,6 +38,7 @@ main{
 }
 main .personal-detail{
     /* border: 1px solid green; */
+    /* background-color: var(--main-bg-color); */
     width: 90%;
     max-width: 1000px;
     margin: 3rem auto;
@@ -40,6 +48,7 @@ main .personal-detail h1{
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: #FF6347;
 }
 main .personal-detail .detail-container,
 main .personal-detail .personal-list{
@@ -50,11 +59,12 @@ main .personal-detail .personal-list{
     justify-content: space-between;
     padding: 0 1rem;
     border-radius: 0.5rem;
-    background-color: #FF6347;
+    background-color: #ff6347d8;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
 }
 main .personal-detail > div span:nth-of-type(2){
     display: none;
@@ -64,8 +74,9 @@ main .personal-detail .list-items{
     border: 1px solid var(--main-color);
     border-radius: 0 0 0.5rem 0.5rem;
     padding: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     transition: 0.2s ease-in;
+    background-color: rgba(255, 255, 255, 0.7);
     display: none;
 }
 main .personal-detail .details ul li{
@@ -136,6 +147,7 @@ main .personal-detail .list-items ul li{
     /* overflow: hidden; */
     cursor: pointer;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 main .personal-detail .list-items ul li button{
     border: none;
