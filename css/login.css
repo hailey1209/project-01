@@ -30,18 +30,18 @@ header .navbar .logo a{
 /* 로그인 폼 */
 main {
     /* border: 1px solid red; */
-    height: 30rem;
+    height: 92vh;
     width: 100%;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     position: relative;
 }
 main .login-form{
     /* border: 1px solid red; */
     width: 80%;
     max-width: 1000px;
-    height: 80%;
+    height: 50%;
     position: absolute;
-    top: 50%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

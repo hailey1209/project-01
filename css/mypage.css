@@ -35,13 +35,15 @@ footer{
 /* 개인정보 리스트 */
 main{
     height: 100vh;
+    padding-top: 3rem;
 }
 main .personal-detail{
     /* border: 1px solid green; */
     /* background-color: var(--main-bg-color); */
     width: 90%;
     max-width: 1000px;
-    margin: 3rem auto;
+    /* margin: 3rem auto; */
+    margin: auto;
     padding: 1rem;
 }
 main .personal-detail h1{
@@ -59,7 +61,7 @@ main .personal-detail .personal-list{
     justify-content: space-between;
     padding: 0 1rem;
     border-radius: 0.5rem;
-    background-color: #ff6347d8;
+    background-color: #FF6347;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -76,7 +78,7 @@ main .personal-detail .list-items{
     padding: 1rem;
     margin-bottom: 1rem;
     transition: 0.2s ease-in;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
     display: none;
 }
 main .personal-detail .details ul li{
@@ -136,12 +138,16 @@ main .personal-detail .list-items ul{
     display: flex;
     justify-content: center;
     min-height: 200px;
+    overflow-x: scroll;
+}
+main .personal-detail .list-items ul::-webkit-scrollbar{
+    display: none;
 }
 main .personal-detail .list-items ul li{
     /* border: 1px solid red; */
     width: 150px;
     height: 200px;
-    margin: 0 0.5rem;
+    margin: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
     /* overflow: hidden; */

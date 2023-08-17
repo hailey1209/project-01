@@ -36,11 +36,6 @@ window.onload = () => {
     scroller.isScrollended()
     .then(result => console.log('scroll eneded!'))
     .catch(err => console.log('scrolling...'))
-
-    //스크롤링중에 어느정도 스크롤바를 내리면 헤더에 그림자 추가
-    scroller.getScrollPosition() > header.offsetHeight ? 
-    header.classList.add('active')
-    : header.classList.remove('active')
   })
 
 }
@@ -64,7 +59,7 @@ function showwData(data){
     const item = document.createElement('div')
     item.className = 'item'
     item.innerHTML=`<div class="item-img">
-                    <img src="" alt="">
+                    <img src="https://www.kobis.or.kr/common/mast/movie/2023/07/6ceb3200629f42c8bbac3fedf994a5ff.jpg" alt="">
                   </div>
                   <div class="item-content">  
                     <h3>${data[i].movieNm}</h3>
@@ -79,7 +74,7 @@ function showwData(data){
   
     function leftSlider(e){
       for(let item of scrollItems){
-      item.style.transform = `translateX(-${item.offsetWidth*3}%)`
+      item.style.transform = `translateX(-${item.offsetWidth*4}%)`
       item.style.transition = '0.3s'
       }
     }
@@ -95,3 +90,5 @@ function showwData(data){
 }
 loadApi('http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=a686fcd94c3bc0a1ae44f56193240ed2&targetDt=20120101')
 .then(data=>showwData(data))
+
+
