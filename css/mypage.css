@@ -56,17 +56,17 @@ main .personal-detail .personal-list{
     cursor: pointer;
     margin-bottom: 0.5rem;
 }
+main .personal-detail > div span:nth-of-type(2){
+    display: none;
+}
 main .personal-detail .details,
 main .personal-detail .list-items{
     border: 1px solid var(--main-color);
     border-radius: 0 0 0.5rem 0.5rem;
     padding: 1rem;
     margin-bottom: 0.5rem;
+    transition: 0.2s ease-in;
     display: none;
-}
-main .personal-detail .details.block,
-main .personal-detail .list-items.block{
-    display: block;
 }
 main .personal-detail .details ul li{
     margin: 1rem;
