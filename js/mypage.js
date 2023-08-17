@@ -42,13 +42,33 @@ const personalList = document.querySelectorAll('main .personal-detail .details u
 function toEdit(e){
     editBtn.removeEventListener('click', toEdit)
     editBtn.innerText = '완료'
+    acodienBox_01.style.display = 'block'
+    detailBox_01.style = 'margin-bottom: 0px; border-radius: 0.5rem 0.5rem 0 0 '
+    console.log(personalList)
+    const detail = document.querySelectorAll('.detail')
+    for(let i=0; i<detail.length; i++){
+        if(detail[i].innerHTML == null){
+            for(let i=0; i< personalList.length; i++){
+                const input = document.createElement('input')
+                input.type = 'text'
+                input.className = 'input'
+                input.style = 'margin-left: 0.5rem; border: none; background: none; border-bottom: 1px solid #999; outline: none; width:60%;'
+                personalList[i].appendChild(input)
+            }
+            editBtn.addEventListener('click', edited)
+        }else{
+            detail[i].innerHTML = ''
+            personalList[i].removeChild(detail[i])
+        }
+        console.log(detail[i].innerHTML)
+    }
     
     if(personalList.innerHtml == null){
         for(let i=0; i< personalList.length; i++){
             const input = document.createElement('input')
             input.type = 'text'
             input.className = 'input'
-            input.style = 'margin-left: 0.5rem; border: none; background: none; border-bottom: 1px solid #999; outline: none;'
+            input.style = 'margin-left: 0.5rem; border: none; background: none; border-bottom: 1px solid #999; outline: none; width:60%;'
             personalList[i].appendChild(input)
         }
         editBtn.addEventListener('click', edited)
@@ -59,26 +79,31 @@ function toEdit(e){
 }
 
 function edited(e){
+    console.log(e.target)
     editBtn.removeEventListener('click', edited)
     alert('수정이 완료 되었습니다.')
     for(let i=0; i<personalList.length; i++){
-    const detail = document.createElement('p')
-    const inputValue = document.querySelector('input')
-    const personal = inputValue.parentElement
-    detail.innerText = inputValue.value
-    personal.appendChild(detail)
-    personal.removeChild(inputValue)
+        const detail = document.createElement('p')
+        detail.className = 'detail'
+        const inputValue = document.querySelector('input')
+        const personal = inputValue.parentElement
+        detail.innerText = inputValue.value
+        personal.appendChild(detail)
+        personal.removeChild(inputValue)
     }
-    editBtn.innerText = '닫기'
         editBtn.addEventListener('click',returnTo)
     return
 }
 
 function returnTo(e){
     editBtn.innerText = '수정하기'
-    editBtn.removeEventListener('click', edited)
+    // editBtn.removeEventListener('click', edited)
     acodienBox_01.style.display = 'none'
     detailBox_01.style = 'margin-bottom: 0.5rem; border-radius: 0.5rem'
     editBtn.addEventListener('click', toEdit)
+    const detail =document.querySelectorAll('.detail')
+    if(detail == null){
+        personalList.removeChild(detail)
+    }
 }
 editBtn.addEventListener('click', toEdit)
