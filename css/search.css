@@ -47,7 +47,7 @@ body{
     object-fit: cover;
 }
 .modal .detail{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 1rem;
     color: white;
     height: 50%;

@@ -59,7 +59,6 @@ window.onload = () => {
     const searchBar = document.querySelector('main .search-container .search-bar input')
     const searched_item = document.querySelectorAll('main .result-container .result-item')
     const modals = document.querySelectorAll('.modal')
-    console.log(modals)
   
     searchBar.addEventListener('keyup', (e)=> {
       for(let i=0; i<searched_item.length; i++){
@@ -77,14 +76,23 @@ window.onload = () => {
     
     function pop(e){
       for(let i=0; i< searched_item.length; i++){
-        if(e.target == searched_item[i]){
+        if(e.target == searched_item[i] || e.target == searched_item[i].childNodes){
           console.log(e.target)
           modals[i].style.display = 'block'
         }
       }
     }
+    function close(e){
+      for(let i=0; i< searched_item.length; i++){
+        if(e.target == modals[i]){
+          console.log(e.target)
+          modals[i].style.display = 'none'
+        }
+      }
+    }
     for(let item of searched_item){
       item.addEventListener('click', pop)
+      window.addEventListener('click', close)
     }
  }
   loadApi('http://127.0.0.1:5000/api/movies')
