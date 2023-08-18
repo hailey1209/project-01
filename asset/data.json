@@ -1,0 +1,366 @@
+[
+   {
+      "rank":1,
+      "title":"오펜하이머",
+      "release":"2023-08-15",
+      "genre":"스릴러",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/6ceb3200629f42c8bbac3fedf994a5ff.jpg"
+   },
+   {
+      "rank":2,
+      "title":"콘크리트 유토피아",
+      "release":"2023-08-09",
+      "genre":"드라마",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/08/3b27ff34ec6d4214ad7aa177bfabbcba.jpg"
+   },
+   {
+      "rank":3,
+      "title":"달짝지근해: 7510",
+      "release":"2023-08-15",
+      "genre":"코미디",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/08/4aa89836d8bd4e148a787ded8c6215b6.jpg"
+   },
+   {
+      "rank":4,
+      "title":"보호자",
+      "release":"2023-08-15",
+      "genre":"액션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/e4f9959e6aa84e3b92eaf6e93977df00.jpg"
+   },
+   {
+      "rank":5,
+      "title":"밀수",
+      "release":"2023-07-26",
+      "genre":"범죄",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/06/a68cc44d22d84acf9d861d5c931a4254.jpg"
+   },
+   {
+      "rank":6,
+      "title":"엘리멘탈",
+      "release":"2023-06-14",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/05/1d8f3d4b27d8479e9250de7c217028ec.jpg"
+   },
+   {
+      "rank":7,
+      "title":"메가로돈 2",
+      "release":"2023-08-15",
+      "genre":"액션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/08/0bf54a9b42a44e938e086647d2652020.jpg"
+   },
+   {
+      "rank":8,
+      "title":"강다니엘: 마이 퍼레이드",
+      "release":"2023-08-30",
+      "genre":"공연",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/d8d5e0bca8034574ac7839215b9f21f4.jpg"
+   },
+   {
+      "rank":9,
+      "title":"명탐정코난: 흑철의 어영",
+      "release":"2023-07-20",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/ffd2c8072afc4550aaed65767beed8bf.jpg"
+   },
+   {
+      "rank":10,
+      "title":"지옥만세",
+      "release":"2023-08-16",
+      "genre":"어드벤처",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/86b9cbd4e7dc49a285f9cad7484f97c5.jpg"
+   },
+   {
+      "rank":11,
+      "title":"런닝맨: 리벤져스",
+      "release":"2023-08-10",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/08/fb9adc22c30d40a5963c780be7fd4e0e.jpg"
+   },
+   {
+      "rank":12,
+      "title":"비공식작전",
+      "release":"2023-08-02",
+      "genre":"드라마",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/08/745a5d6e9bd24074b86285c230d3e109.jpg"
+   },
+   {
+      "rank":13,
+      "title":"미션 임파서블: 데드 레코닝 PART ONE",
+      "release":"2023-07-12",
+      "genre":"액션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/06/fbc864b8a3f64ee98e22372534a81cec.jpg"
+   },
+   {
+      "rank":14,
+      "title":"더 문",
+      "release":"2023-08-02",
+      "genre":"SF",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/08/b9b13d4a5ce94150a8ee0522f60b978f.jpg"
+   },
+   {
+      "rank":15,
+      "title":"바비",
+      "release":"2023-07-19",
+      "genre":"기타",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/162c9770955d4b08b64cd926eb449e1d.jpg"
+   },
+   {
+      "rank":16,
+      "title":"더 퍼스트 슬램덩크",
+      "release":"2023-01-04",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2022/12/de3eb9d23b1b49e58b5f06b96d5fa6b5.jpg"
+   },
+   {
+      "rank":17,
+      "title":"잠",
+      "release":"2023-09-06",
+      "genre":"미스터리",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/2db23c229bea47af89ff464e4af7325c.jpg"
+   },
+   {
+      "rank":18,
+      "title":"스파이 코드명 포춘",
+      "release":"2023-08-30",
+      "genre":"액션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/19a25e5cf13e4a48b291e47150fe119f.jpg"
+   },
+   {
+      "rank":19,
+      "title":"바다 탐험대 옥토넛 어보브 앤 비욘드 : 육지 넘어 하늘까지!",
+      "release":"2023-08-10",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/85458581f8d44b0da28af1ad8764f10b.JPG"
+   },
+   {
+      "rank":20,
+      "title":"킬러의 레스토랑",
+      "release":"2023-08-17",
+      "genre":"액션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/08/8a479424b8ea4b799776b33a7f8dd079.jpg"
+   },
+   {
+      "rank":21,
+      "title":"그랜드 부다페스트 호텔",
+      "release":"2014-03-20",
+      "genre":"미스터리",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2018/09/fe5b9d092a264d35b7634032519060de.jpg"
+   },
+   {
+      "rank":22,
+      "title":"셰이프 오브 워터: 사랑의 모양",
+      "release":"2018-02-22",
+      "genre":"어드벤처",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2018/01/44d12c8483834eed852db80b544572d7.jpg"
+   },
+   {
+      "rank":23,
+      "title":"블랙 스완",
+      "release":"2011-02-24",
+      "genre":"스릴러",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2019/11/8a0cb941eac44310a006fef992dff60e.jpg"
+   },
+   {
+      "rank":24,
+      "title":"엔니오: 더 마에스트로",
+      "release":"2023-07-05",
+      "genre":"다큐멘터리",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/06/c7976f4b51584f83900bf3802df47624.jpg"
+   },
+   {
+      "rank":25,
+      "title":"스토커",
+      "release":"2013-02-28",
+      "genre":"스릴러",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2013/02/543771e9ce7d496ca6f49146f05aa776.jpg"
+   },
+   {
+      "rank":26,
+      "title":"몬스터 패밀리 2",
+      "release":"2023-08-02",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/a327b04c6fb9468caf2dafb8bbd73382.jpg"
+   },
+   {
+      "rank":27,
+      "title":"마야 3: 숲속 왕국의 위기",
+      "release":"2023-08-24",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/fb614097a586481b9da3dc0d1a82c084.jpg"
+   },
+   {
+      "rank":28,
+      "title":"쓰리 빌보드",
+      "release":"2018-03-15",
+      "genre":"코미디",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2018/02/7e8c43614955438a9cb420d9c7116735.jpg"
+   },
+   {
+      "rank":29,
+      "title":"비포 선라이즈",
+      "release":"1996-03-30",
+      "genre":"멜로/로맨스",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2016/03/609cce35b7444471aaa354044b99672c.jpg"
+   },
+   {
+      "rank":30,
+      "title":"치치치 치킨의 비밀",
+      "release":"",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/9cb58db734f74e049179ced018e040ca.jpg"
+   },
+   {
+      "rank":31,
+      "title":"더 페이버릿: 여왕의 여자",
+      "release":"2019-02-21",
+      "genre":"드라마",
+      "poster-img":"https://www.kobis.or.kr/kobis/business/mast/mvie/popupImg.do?imgURL=/common/mast/movie/2019/02/a7c7332548354a7186a5fac286569724.jpg"
+   },
+   {
+      "rank":32,
+      "title":"장화, 홍련",
+      "release":"2003-06-13",
+      "genre":"공포",
+      "poster-img":"https://www.kobis.or.kr/kobis/business/mast/mvie/popupImg.do?imgURL=/upload/up_img/cleansing/x00/00/74/mov_20030131_37525.jpg"
+   },
+   {
+      "rank":33,
+      "title":"비밀의 언덕",
+      "release":"2023-07-12",
+      "genre":"독립영화",
+      "poster-img":"https://www.kobis.or.kr/kobis/business/mast/mvie/popupImg.do?imgURL=/common/mast/movie/2023/07/e7437c1c5bff4f1fb92aa3b5cac2f1e3.jpg"
+   },
+   {
+      "rank":34,
+      "title":"아버지의 마음",
+      "release":"2023-07-20",
+      "genre":"다큐멘터리",
+      "poster-img":"https://www.kobis.or.kr/kobis/business/mast/mvie/popupImg.do?imgURL=/common/mast/movie/2023/07/9d7301c3f44049ff816af36c756de65a.jpg"
+   },
+   {
+      "rank":35,
+      "title":"여름날 우리",
+      "release":"2021-08-25",
+      "genre":"멜로/로맨스",
+      "poster-img":"https://www.kobis.or.kr/kobis/business/mast/mvie/popupImg.do?imgURL=/common/mast/movie/2023/05/13a6f9eeac7d4d1a81600212e6c3e38d.jpg"
+   },
+   {
+      "rank":36,
+      "title":"노매드랜드",
+      "release":"2021-04-15",
+      "genre":"드라마",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2021/04/b3e99e5e7304495586605e42c4384427.jpg"
+   },
+   {
+      "rank":37,
+      "title":"마에스트로",
+      "release":"2023-08-09",
+      "genre":"드라마",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/16da098a04c443fdb1aa2b49203ab909.jpg"
+   },
+   {
+      "rank":38,
+      "title":"로미오와 줄리엣",
+      "release":"",
+      "genre":"공연",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/05/0f6e5785990b41e3b70fc39f2fdbcee6.jpg"
+   },
+   {
+      "rank":39,
+      "title":"불교 진혼곡",
+      "release":"",
+      "genre":"드라마",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/08/1eb944eb74d54a62a88f2051f015aae7.jpg"
+   },
+   {
+      "rank":40,
+      "title":"핑크퐁 시네마 콘서트3 : 진저브레드맨을 잡아라",
+      "release":"2023-07-26",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/06/6856a99594cd455da47364ec947f21f1.png"
+   },
+   {
+      "rank":41,
+      "title":"탄생",
+      "release":"2022-11-30",
+      "genre":"드라마",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2022/11/fba1cf2f7d6f4fb59ff100c226fde9e7.jpg"
+   },
+   {
+      "rank":42,
+      "title":"너의 순간",
+      "release":"2023-08-16",
+      "genre":"멜로/로맨스",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/909a074fe5e248ce971ae7aeb49ab395.jpg"
+   },
+   {
+      "rank":43,
+      "title":"비닐하우스",
+      "release":"2023-07-26",
+      "genre":"독립 영화",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/06/5e6c74928c2f442cb417819ac7d8541c.jpg"
+   },
+   {
+      "rank":43,
+      "title":"퀴어 마이 프렌즈",
+      "release":"2023-08-09",
+      "genre":"다큐멘터리",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/08/705f7fa2f66a49e1ac30c5f6c5f98c61.jpg"
+   },
+   {
+      "rank":45,
+      "title":"극장판 도라에몽: 진구와 하늘의 유토피아",
+      "release":"2023-07-08",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/07/451b72a3a4fa4c3d9e69c1c8b188e750.jpg"
+   },
+   {
+      "rank":46,
+      "title":"특수본",
+      "release":"2011-11-24",
+      "genre":"액션",
+      "poster-img":"https://www.kobis.or.kr/upload/up_img/2011/11/mov_945922_20111110091054_1.jpg"
+   },
+   {
+      "rank":47,
+      "title":"수라",
+      "release":"2023-06-21",
+      "genre":"다큐멘터리",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/06/40ad2d6b602a4b06b5f9ec527f99b7cc.jpg"
+   },
+   {
+      "rank":48,
+      "title":"스파이더맨: 어크로스 더 유니버스",
+      "release":"2023-06-21",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/06/5d02668ff95e4b2f9694b7ff9ff666fc.jpg"
+   },
+   {
+      "rank":49,
+      "title":"스즈메의 문단속",
+      "release":"2023-03-08",
+      "genre":"애니메이션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/01/493d957e6b894177bb380f3d83a7eed0.jpg"
+   },
+   {
+      "rank":50,
+      "title":"귀공자",
+      "release":"2023-06-21",
+      "genre":"액션",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2023/06/64770351f7104675bcce37f5b41dd9db.jpg"
+   },
+   {
+      "rank":51,
+      "title":"헤어질 결심",
+      "release":"2022-06-29",
+      "genre":"멜로/로맨스",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2022/06/5960144d7fa64411bcdb59d84bc5e4fc.jpg"
+   },
+   {
+      "rank":52,
+      "title":"올드보이",
+      "release":"2003-11-21",
+      "genre":"스릴러",
+      "poster-img":"https://www.kobis.or.kr/common/mast/movie/2013/08/743f78e2b45c452ca864481978bb9e90.jpg"
+   }
+]

@@ -42,39 +42,41 @@
     <main>
        <div class="register-form">
         <fieldset>
-            <legend>회원가입</legend>
-            <div class="forms">
-                <ul>
-                    <li class="name">
-                        <label for="name">이름</label>
-                        <input type="text" name="name" id="name" placeholder="이름을 입력해주세요."><br>
-                        <div id="nameError" class="error"></div>
-                    </li>
-                    <li class="email">
-                        <label for="email">email</label>
-                        <input type="text" name="email" id="email" placeholder="이메일을 입력해주세요."><br>
-                        <div id="emailError" class="error"></div>
-                    </li>
-                    <li class="userId">
-                        <label for="userId">닉네임</label>
-                        <input type="text" name="userId" id="userId" placeholder="사용할 닉네임을 입력해주세요."><br>
-                        <div id="userIdError" class="error"></div>
-                    </li>
-                    <li class="password">
-                        <label for="password">비밀번호</label>
-                        <input type="password" name="password" id="password" placeholder="비밀번호를 입력해주세요"><br>
-                        <div id="passwordError" class="error"></div>
-                    </li>
-                    <li class="passwordCheck">
-                        <label for="passwordCheck">비밀번호 확인</label>
-                        <input type="password" name="passwordCheck" id="passwordCheck" placeholder="비밀번호를 다시 입력해주세요.">
-                        <div id="passwordCheckError" class="error">비밀번호가 일치하지 않습니다.</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="submit-btn">
-                <button type="submit">가입하기</button>
-            </div>
+            <form action="/register" method="post">
+                <legend>회원가입</legend>
+                <div class="forms">
+                    <ul>
+                        <li class="name">
+                            <label for="name">이름</label>
+                            <input type="text" name="name" id="name" placeholder="이름을 입력해주세요."><br>
+                            <div id="nameError" class="error"></div>
+                        </li>
+                        <li class="email">
+                            <label for="email">email</label>
+                            <input type="text" name="email" id="email" placeholder="이메일을 입력해주세요."><br>
+                            <div id="emailError" class="error"></div>
+                        </li>
+                        <li class="userId">
+                            <label for="userId">닉네임</label>
+                            <input type="text" name="userId" id="userId" placeholder="사용할 닉네임을 입력해주세요."><br>
+                            <div id="userIdError" class="error"></div>
+                        </li>
+                        <li class="password">
+                            <label for="password">비밀번호</label>
+                            <input type="password" name="password" id="password" placeholder="비밀번호를 입력해주세요"><br>
+                            <div id="passwordError" class="error"></div>
+                        </li>
+                        <li class="passwordCheck">
+                            <label for="passwordCheck">비밀번호 확인</label>
+                            <input type="password" name="passwordCheck" id="passwordCheck" placeholder="비밀번호를 다시 입력해주세요.">
+                            <div id="passwordCheckError" class="error">비밀번호가 일치하지 않습니다.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit">가입하기</button>
+                </div>
+            </form>
         </fieldset>
        </div>
     </main>

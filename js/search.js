@@ -23,8 +23,7 @@ toTop.addEventListener('click', function(e){
 
 
 window.onload = () => {
-    async function loadApi(url){
-        await fetch(url)
-        console.log(response)
-    }
+ async function loadApi(){
+  // await fetch
+ }
 }
