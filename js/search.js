@@ -23,7 +23,63 @@ toTop.addEventListener('click', function(e){
 
 
 window.onload = () => {
- async function loadApi(){
-  // await fetch
- }
+//   function loadApi(url){
+//    return fetch(url)
+//     .then(response => response.json())
+//  }
+//   function showData(data){
+//     const movies = data.movies
+//     console.log(movies)
+//     const result_container = document.querySelector('main .result-container')
+//     for(let i=0; i<data.length; i++){
+//       const result_item = document.createElement('div')
+//       result_item.className = 'result-item'
+//       result_item.innerHTML = `<div class="item-img">
+//                                   <img src='${movies[i].poster_img}' alt="">
+//                                 </div>
+//                                 <div class="item-detail">
+//                                   <h3>${movies[i].title}</h3>
+//                                   <p>${movies[i].release}</p>
+//                                 </div>`
+//       result_container.appendChild(result_item)
+//     }
+//  }
+
+//  loadApi('http://127.0.0.1:5000/api/movies')
+//  .then(data=>showData(data))
+
+
+
+  const result_container = document.querySelector('main .result-container')
+  for(let i=0; i<50; i++){
+    const result_item = document.createElement('div')
+    result_item.className = 'result-item'
+    result_item.innerHTML = `<div class="item-img">
+                              <img src='../asset/imgs/movies_01.jpg' alt="">
+                            </div>
+                            <div class="item-detail">
+                              <h3>title</h3>
+                              <p>release</p>
+                            </div>`
+    result_container.appendChild(result_item)
+  }
+
+  const searchBar = document.querySelector('main .search-container .search-bar input')
+  const searched_item = document.querySelectorAll('main .result-container .result-item')
+  // console.log(searched_item)
+
+  searchBar.addEventListener('keyup', (e)=> {
+    for(let i=0; i<searched_item.length; i++){
+      // console.log(searchBar.value.toLowerCase())
+      searched_item[i].style.display = 'none'
+      const name = searched_item[i].querySelector('main .result-container .result-item .item-detail h3')
+      // console.log(name.innerText.toLowerCase())
+      if(name.innerText.toLowerCase().includes(e.target.value) || name.innerText.toUpperCase().includes(e.target.value)){
+        searched_item[i].style.display = 'block'
+      }else{
+        searched_item[i].style.display = 'none'
+      }
+    }
+    return
+  })
 }

@@ -48,7 +48,7 @@ function loadApi(url){
 // .then(response=> console.log(response))
 }
 
-function showwData(data){
+function showData(data){
   const movieDetail = []
   const movieItemContiner = document.querySelector('main .main-scroll .scroll-container .item-container')
   for(let i=0; i<10; i++){
@@ -89,6 +89,6 @@ function showwData(data){
 
 }
 loadApi('http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=a686fcd94c3bc0a1ae44f56193240ed2&targetDt=20120101')
-.then(data=>showwData(data))
+.then(data=>showData(data))
 
 
