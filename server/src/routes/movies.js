@@ -2,10 +2,16 @@ const express = require('express')
 const Movies = require('../models/Movies')
 const ex_async_handler = require('express-async-handler')
 const { isAuth } = require('../../auth')
-const axios = require('axios')
-const { json } = require('express')
+const cors = require('cors')
+
 
 const router = express.Router()
+
+const corsOptions = {
+    origin: 'http://127.0.0.1:5500',
+    credentials: true
+}
+router.use(cors(corsOptions))
 
 //영화 
 router.get('/', ex_async_handler( async (req, res, next)=> {
