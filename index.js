@@ -72,14 +72,6 @@ function showData(data){
     const scrollItems = document.querySelectorAll('.item')
     const leftBtn = document.querySelector('.left')
     const rightBtn = document.querySelector('.right')
-
-    const contianer_width = scrollItems[0].clientWidth
-    const slider_width =contianer_width * scrollItems.length
-    scroll_wrap.style.width = `${slider_width}`
-
-    let current_index = 0
-    let translate = 0
-  
     function leftSlider(e){
       for(let item of scrollItems){
       item.style.transform = `translateX(-${item.offsetWidth*4}%)`

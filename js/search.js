@@ -1,16 +1,10 @@
-// const scroller = new Scroller(false)
-// 위로가기 버튼
-//영화 클릭시 해당 페이지로 넘어가기
-// const ChosungSearch = require('hangul-chosung-search-js')
-
-//스크롤링중에 어느정도 스크롤바를 내리면 헤더에 그림자 추가
+const scroller = new Scroller(false)
 
 const header =document.querySelector('header')
 const footer = document.querySelector('footer')
 
 const toTop = document.querySelector('.to-top div')
 toTop.addEventListener('click', function(e){
-    console.log(e.target)
     window.scrollTo({left:0,top:0, behavior:'smooth'})
 })
 
@@ -22,7 +16,12 @@ toTop.addEventListener('click', function(e){
     .catch(err => console.log('scrolling...'))
   })
 
-
+window.addEventListener('click',function(e){
+  if(e.target.className.includes('show')){
+    this.document.body.classList.toggle('dark')
+    header.classList.toggle('dark')
+  }
+})
 window.onload = () => {
   function loadApi(url){
    return fetch(url)

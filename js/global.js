@@ -1,7 +1,7 @@
-const scroller = new Scroller(false)
+// const scroller = new Scroller(false)
 
 window.onload = () => {
-    scroller.setScrollPosition({top:0, behavior:'smooth'})
+    // scroller.setScrollPosition({top:0, behavior:'smooth'})
   
     //테마변경 다크
     const mode = document.querySelector('.mode')
