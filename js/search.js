@@ -16,12 +16,6 @@ toTop.addEventListener('click', function(e){
     .catch(err => console.log('scrolling...'))
   })
 
-window.addEventListener('click',function(e){
-  if(e.target.className.includes('show')){
-    this.document.body.classList.toggle('dark')
-    header.classList.toggle('dark')
-  }
-})
 window.onload = () => {
   function loadApi(url){
    return fetch(url)
@@ -60,6 +54,15 @@ window.onload = () => {
     const searched_item = document.querySelectorAll('main .result-container .result-item')
     const modals = document.querySelectorAll('.modal')
 
+    window.addEventListener('click',function(e){
+      if(e.target.className.includes('show')){
+        this.document.body.classList.toggle('dark')
+        header.classList.toggle('dark')
+        for(let item of searched_item){
+          item.classList.toggle('dark')
+        }
+      }
+    })
 
     searchBar.addEventListener('keyup', (e)=> {
       for(let i=0; i<searched_item.length; i++){
