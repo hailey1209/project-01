@@ -1,6 +1,7 @@
 // const scroller = new Scroller(false)
 // 위로가기 버튼
 //영화 클릭시 해당 페이지로 넘어가기
+// const ChosungSearch = require('hangul-chosung-search-js')
 
 //스크롤링중에 어느정도 스크롤바를 내리면 헤더에 그림자 추가
 
@@ -59,7 +60,8 @@ window.onload = () => {
     const searchBar = document.querySelector('main .search-container .search-bar input')
     const searched_item = document.querySelectorAll('main .result-container .result-item')
     const modals = document.querySelectorAll('.modal')
-  
+
+
     searchBar.addEventListener('keyup', (e)=> {
       for(let i=0; i<searched_item.length; i++){
         console.log(searchBar.value.toLowerCase())
@@ -91,7 +93,7 @@ window.onload = () => {
       }
     }
     for(let item of searched_item){
-      item.addEventListener('click', pop)
+      window.addEventListener('click', pop)
       window.addEventListener('click', close)
     }
  }
